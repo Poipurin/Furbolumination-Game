@@ -1,4 +1,4 @@
-<h1>GameTest</h1>
+<h1>Furboluminación</h1>
 Primer acercamiento al desarrollo de juegos<br>
 Consiste en esquivar a los enemigos el mayor tiempo posible
 <h3> Contexto</h3>
