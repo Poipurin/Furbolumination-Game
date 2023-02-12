@@ -7,7 +7,11 @@ Eres un pequeño furby que quiere llegar a la iluminación, El Grandioso Furby N
 Inicio
 <img src="https://i.ibb.co/d4Pv9qz/primerapantalla.jpg"></a><br>
 <h3>Sprites</h3>
-
+furbito
+<img src="https://i.ibb.co/YpyW4dd/furbito1.png"> <br>
+enemigos
+<h2>Música</h2>
+<br>
 <h2>Lenguajes y herramientas</h2>
 
 ● Aseprite<br>
