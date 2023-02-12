@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/playerGrey_up1.png-6bd114d0a6beac91f48e3a7314d44564.stex"
+path="res://.import/furbito1.png-c0e186a7befe049307dd7629bdb1002e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/playerGrey_up1.png"
-dest_files=[ "res://.import/playerGrey_up1.png-6bd114d0a6beac91f48e3a7314d44564.stex" ]
+source_file="res://art/furbito1.png"
+dest_files=[ "res://.import/furbito1.png-c0e186a7befe049307dd7629bdb1002e.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
@@ -31,5 +31,5 @@ process/invert_color=false
 process/normal_map_invert_y=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0
