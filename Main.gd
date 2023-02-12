@@ -21,6 +21,7 @@ func new_game():
 	$HUD.show_message("Get Ready")
 	get_tree().call_group("mobs", "queue_free")
 	$Music.play()
+	$DeathSound.stop()
 
 func _on_ScoreTimer_timeout():
 	score += 1

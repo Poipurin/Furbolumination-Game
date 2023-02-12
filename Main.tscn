@@ -4,8 +4,8 @@
 [ext_resource path="res://mob.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Main.gd" type="Script" id=3]
 [ext_resource path="res://HUD.tscn" type="PackedScene" id=4]
-[ext_resource path="res://art/gameover.wav" type="AudioStream" id=5]
-[ext_resource path="res://art/House In a Forest Loop.ogg" type="AudioStream" id=6]
+[ext_resource path="res://art/Kevin MacLeod - 8bit Dungeon Level.mp3" type="AudioStream" id=5]
+[ext_resource path="res://art/Kevin MacLeod - Pixelland.mp3" type="AudioStream" id=6]
 [ext_resource path="res://art/furbybackgroud.png" type="Texture" id=7]
 
 [sub_resource type="Curve2D" id=1]
@@ -44,10 +44,10 @@ curve = SubResource( 1 )
 [node name="HUD" parent="." instance=ExtResource( 4 )]
 
 [node name="Music" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 6 )
+stream = ExtResource( 5 )
 
 [node name="DeathSound" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 5 )
+stream = ExtResource( 6 )
 
 [connection signal="hit" from="Player" to="." method="game_over"]
 [connection signal="timeout" from="MobTimer" to="." method="_on_MobTimer_timeout"]
