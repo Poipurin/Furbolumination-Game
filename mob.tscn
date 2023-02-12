@@ -41,7 +41,6 @@ __meta__ = {
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )
 animation = "fly"
-frame = 1
 speed_scale = 0.75
 playing = true
 
