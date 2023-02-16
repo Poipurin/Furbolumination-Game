@@ -5,6 +5,7 @@ var score
 
 func _ready():
 	randomize()
+	
 
 func game_over():
 	$ScoreTimer.stop()

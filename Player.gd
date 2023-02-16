@@ -11,6 +11,7 @@ var screen_size # Size of the game window.
 func _ready():
 	screen_size = get_viewport_rect().size
 	hide()
+	$AnimatedSprite.play()
 func _process(delta):
 	var velocity = Vector2.ZERO # The player's movement vector.
 	if Input.is_action_pressed("move_right"):
@@ -24,19 +25,15 @@ func _process(delta):
 
 	if velocity.length() > 0:
 		velocity = velocity.normalized() * speed
-		$AnimatedSprite.play()
-	else:
-		$AnimatedSprite.stop()
+		
 	position += velocity * delta
 	position.x = clamp(position.x, 0, screen_size.x)
 	position.y = clamp(position.y, 0, screen_size.y)
-	if velocity.x != 0:
+	if velocity.x:
 		$AnimatedSprite.animation = "fly"
 		$AnimatedSprite.flip_v = false
-	# See the note below about boolean assignment.
 		$AnimatedSprite.flip_h = velocity.x < 0
 	elif velocity.y != 0:
-		$AnimatedSprite.animation = "up"
 		$AnimatedSprite.flip_v = velocity.y > 0
 		if velocity.x < 0:
 			$AnimatedSprite.flip_h = true
@@ -44,16 +41,12 @@ func _process(delta):
 			$AnimatedSprite.flip_h = false
 		
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
 
-
-func _on_Player_body_entered(body):
-	hide() # Player disappears after being hit.
+func _on_Player_body_entered(_body):
+	hide() 
 	emit_signal("hit")
-	# Must be deferred as we can't change physics properties on a physics callback.
 	$CollisionShape2D.set_deferred("disabled", true)
+	
 func start(pos):
 	position = pos
 	show()
