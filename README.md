@@ -6,11 +6,11 @@ Eres un pequeño furby que quiere llegar a la iluminación, El Grandioso Furby N
 Jugar : <a href="https://poipurin.itch.io/furb-o-lumination"> Furb-o-lumination!</a><br>
 <h2>Capturas</h2>
 Inicio
-<img src="https://i.ibb.co/qC7b7n2/primerapantalla.jpg"><br>
+<img src="https://i.ibb.co/qC7b7n2/primerapantalla.jpg" height="300px">
 Juego
-<img src="https://i.ibb.co/F541DgL/juego.jpg"><br>
+<img src="https://i.ibb.co/F541DgL/juego.jpg" height="300px">
 Game Over
-<img src="https://i.ibb.co/3Nm1bMH/gameover.jpg"><br>
+<img src="https://i.ibb.co/3Nm1bMH/gameover.jpg" height="300px"><br>
 
 <h2>Música</h2>
 <br>
